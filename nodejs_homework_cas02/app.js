@@ -1,6 +1,6 @@
 const util = require("util");
 
-const dollar = "23";
+const dollar = 23;
 const name = "Dave";
 
 //koristenje na placeholder-i
