@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create new car</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <form action="/cars/addCar" method="post">
+      <label for="modelName">Car model:</label><br />
+      <input
+        type="text"
+        id="modelName"
+        name="modelName"
+        placeholder="Enter car name..."
+      /><br /><br />
+      <label for="carColor">Color of the car:</label><br />
+      <input
+        type="text"
+        id="carColor"
+        name="carColor"
+        placeholder="Enter car color..."
+      /><br /><br />
+      <label for="yearManufactured">Year manufactured:</label><br />
+      <input
+        type="number"
+        id="yearManufactured"
+        name="yearManufactured"
+        placeholder="Enter year of manufacture..."
+      /><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

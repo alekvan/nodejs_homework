@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ListOfCars</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Car model</th>
+        <th>Car color</th>
+        <th>Car year</th>
+      </tr>
+      <% model.forEach(car => { %>
+      <tr>
+        <td><%= car.modelName %></td>
+        <td><%= car.carColor %></td>
+        <td><%= car.yearManufactured %></td>
+      </tr>
+      <% }) %>
+    </table>
+    <a href="/cars/addCar" class="myButton">Add a car</a>
+  </body>
+</html>
