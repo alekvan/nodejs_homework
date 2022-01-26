@@ -5,7 +5,8 @@ const carsController = require("../controllers/cars.controller.js");
 const carRouter = express.Router();
 
 carRouter.get("/", carsController.getCars);
-carRouter.get("/addCar", carsController.createCarView);
-carRouter.post("/addCar", carsController.createCar);
+carRouter.get("/add", carsController.createCarView);
+carRouter.post("/add", carsController.createCar);
+carRouter.get("/:carColor", carsController.filterColorCars);
 
 module.exports = carRouter;

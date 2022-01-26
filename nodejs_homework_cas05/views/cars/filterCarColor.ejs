@@ -11,14 +11,13 @@
         <th>Car color</th>
         <th>Car year</th>
       </tr>
-      <% model.forEach(car => { %>
+      <% filteredCarColor.forEach(color => { %>
       <tr>
-        <td><%= car.modelName %></td>
-        <td><%= car.carColor %></td>
-        <td><%= car.yearManufactured %></td>
+        <td><%= color.modelName %></td>
+        <td><%= color.carColor %></td>
+        <td><%= color.yearManufactured %></td>
       </tr>
       <% }) %>
     </table>
-    <a href="/cars/add" class="myButton">Add a car</a>
   </body>
 </html>
