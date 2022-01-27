@@ -7,6 +7,6 @@ const carRouter = express.Router();
 carRouter.get("/", carsController.getCars);
 carRouter.get("/add", carsController.createCarView);
 carRouter.post("/add", carsController.createCar);
-carRouter.get("/:carColor", carsController.filterColorCars);
+carRouter.get("/:carColor", carsController.filterCarsByColor);
 
 module.exports = carRouter;

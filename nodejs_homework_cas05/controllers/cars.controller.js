@@ -13,16 +13,16 @@ function createCar(req, res) {
   res.redirect("/cars");
 }
 
-function filterColorCars(req, res) {
-  const filteredCarColor = model.filter((color) => {
+function filterCarsByColor(req, res) {
+  const filteredCars = model.filter((color) => {
     return color.carColor.toLowerCase() == req.params.carColor.toLowerCase();
   });
-  res.render("cars/filterCarColor", { filteredCarColor });
+  res.render("cars/filterCarColor", { filteredCars });
 }
 
 module.exports = {
   getCars,
   createCarView,
   createCar,
-  filterColorCars,
+  filterCarsByColor,
 };

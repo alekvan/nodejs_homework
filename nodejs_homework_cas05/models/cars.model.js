@@ -15,16 +15,6 @@ const cars = [
     carColor: "Black",
   },
   {
-    modelName: "Opel Insignia",
-    yearManufactured: 2018,
-    carColor: "Red",
-  },
-  {
-    modelName: "Audi A8",
-    yearManufactured: 2021,
-    carColor: "Black",
-  },
-  {
     modelName: "Porsche Macan",
     yearManufactured: 2018,
     carColor: "Orange",
@@ -33,6 +23,11 @@ const cars = [
     modelName: "BMW M3",
     yearManufactured: 2020,
     carColor: "Blue",
+  },
+  {
+    modelName: "Mitsubishi ENDEAVOR",
+    yearManufactured: 2005,
+    carColor: "Black",
   },
 ];
 
